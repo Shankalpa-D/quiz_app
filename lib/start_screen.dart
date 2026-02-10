@@ -16,7 +16,26 @@ class StartScreen extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: Center(child: Text("Start Quiz")),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset("assets/images/quiz-logo.png", width: 280),
+
+            const SizedBox(height: 80),
+            OutlinedButton(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
+              child: Text("Start Quiz"),
+            ),
+
+            Text(
+              "Challenge yourself on this quiz app",
+              style: TextStyle(fontSize: 28, color: Colors.white),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
