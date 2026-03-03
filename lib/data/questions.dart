@@ -8,7 +8,7 @@ const questions = [
     'trafalgar law',
   ]),
 
-  QuizQuestions('what is the name of luffy\'s pirate crew?', [
+  QuizQuestions('what pirate crew does zoro belong to??', [
     'straw hat pirates', // Correct Answer
     'red hair pirates',
     'whitebeard pirates',
