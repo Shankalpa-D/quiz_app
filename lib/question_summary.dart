@@ -32,9 +32,21 @@ class QuestionSummary extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(data['question'] as String),
-                  const SizedBox(width: 5),
-                  Text(data['user_answer'] as String),
-                  Text(data['correct_answer'] as String),
+                  const SizedBox(height: 5),
+
+                  Text(
+                    data['user_answer'] as String,
+                    style: const TextStyle(
+                      color: Color.fromARGB(255, 248, 236, 14),
+                    ),
+                  ),
+
+                  Text(
+                    data['correct_answer'] as String,
+                    style: const TextStyle(
+                      color: Color.fromARGB(255, 128, 238, 3),
+                    ),
+                  ),
                 ],
               ),
             ),
